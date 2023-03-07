@@ -6,44 +6,75 @@
     --green: #A8E890;
     --lightgreen: #CFFF8D;
     --orange: #ffa600;
-    
+
 }
 
 body {
     background-color: var(--darkgreen);
     position: fixed;
-    margin-top: 150px;
+    margin-top: 110px;
+
 }
-.navbar a{
-    color: #A8E890;
+
+.navbar {
+    margin-left: 100px;
 }
-header {
+
+.navbar a {
+    font-family: 'Mochiy Pop One', sans-serif;
+    color: var(--orange);
+    font-size: 20px;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.navbar :hover {
+    color: var(--darkgreen)
+}
+
+#active {
+    color: var(--green);
+    box-shadow: 0 0 1rem var(--orange);
+    border-radius: 10px;
+}
+
+.header {
     width: 100%;
-   
     background-color: var(--midgreen);
     position: fixed;
     top: 0;
     left: 0;
     box-shadow: 0 0 0.5rem var(--orange);
     display: flex;
-    
+    align-items: center;
 }
 
-#toptext{
+#toptext {
     font-family: 'Mochiy Pop One', sans-serif;
     color: var(--orange);
     font-size: 40px;
     padding-left: 5%;
     margin-top: 1%;
     margin-bottom: 1%;
-    
 }
 
-#name {
+#rubrik {
     font-family: 'Mochiy Pop One', sans-serif;
     color: var(--green);
     text-align: center;
     font-size: 50px;
+    margin-top: 0;
+    box-shadow: 0 0 2rem var(--orange);
+    border-radius: 50px;
+}
+
+#underrubrik {
+    font-family: 'Mochiy Pop One', sans-serif;
+    color: var(--green);
+    font-size: 20px;
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 30px;
 }
 
 #pic {
@@ -55,37 +86,38 @@ header {
     box-shadow: 0 0 4rem var(--orange)
 }
 
-#text{
+#text {
     font-family: 'Mochiy Pop One', sans-serif;
-    max-width: 50%;
+    max-width: 60%;
     color: var(--green);
     margin: auto;
     position: relative;
     top: 20px;
     margin-bottom: 90px;
+    text-align: center;
 }
 
-#foottext{
+#foottext {
     color: var(--darkgreen);
     font-size: 13px;
 }
 
-footer{
-   width: 100%;
+footer {
+    width: 100%;
     font-family: 'Mochiy Pop One', sans-serif;
     background-color: var(--midgreen);
     bottom: 0%;
     left: 0%;
-    position:fixed;
+    position: fixed;
     padding-left: 2%;
     box-shadow: 0 0 0.5rem var(--orange)
 }
 
-#mailcolor{
+#mailcolor {
     color: var(--darkgreen);
     text-decoration: none;
 }
 
-#mailcolor:hover{
+#mailcolor:hover {
     color: var(--green);
 }
