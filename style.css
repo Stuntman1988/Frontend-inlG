@@ -1,17 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
 
 :root {
-    --text-color: rgb(14, 0, 141);
-    --bg-color: rgb(179, 179, 179);
+    --darkgreen: #425F57;
+    --midgreen: #749F82;
+    --green: #A8E890;
+    --lightgreen: #CFFF8D;
+    --orange: #ffa600;
+    
 }
 
 body {
-    background-color: var(--bg-color);
+    background-color: var(--darkgreen);
+    position: fixed;
+    margin-top: 150px;
+}
+.navbar a{
+    color: #A8E890;
+}
+header {
+    width: 100%;
+   
+    background-color: var(--midgreen);
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 0.5rem var(--orange);
+    display: flex;
+    
+}
+
+#toptext{
+    font-family: 'Mochiy Pop One', sans-serif;
+    color: var(--orange);
+    font-size: 40px;
+    padding-left: 5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    
 }
 
 #name {
     font-family: 'Mochiy Pop One', sans-serif;
-    color: var(--text-color);
+    color: var(--green);
     text-align: center;
     font-size: 50px;
 }
@@ -21,14 +51,41 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 4rem var(--orange)
 }
 
 #text{
     font-family: 'Mochiy Pop One', sans-serif;
     max-width: 50%;
+    color: var(--green);
     margin: auto;
     position: relative;
     top: 20px;
-    margin-bottom: 70px;
-    
+    margin-bottom: 90px;
+}
+
+#foottext{
+    color: var(--darkgreen);
+    font-size: 13px;
+}
+
+footer{
+   width: 100%;
+    font-family: 'Mochiy Pop One', sans-serif;
+    background-color: var(--midgreen);
+    bottom: 0%;
+    left: 0%;
+    position:fixed;
+    padding-left: 2%;
+    box-shadow: 0 0 0.5rem var(--orange)
+}
+
+#mailcolor{
+    color: var(--darkgreen);
+    text-decoration: none;
+}
+
+#mailcolor:hover{
+    color: var(--green);
 }
