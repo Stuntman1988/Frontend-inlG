@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
 
+
 :root {
     --darkgreen: #425F57;
     --midgreen: #749F82;
@@ -11,8 +12,11 @@
 
 body {
     background-color: var(--darkgreen);
-    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 110px;
+
 
 }
 
@@ -61,10 +65,11 @@ body {
 #rubrik {
     font-family: 'Mochiy Pop One', sans-serif;
     color: var(--green);
-    text-align: center;
     font-size: 50px;
+    /* max-width: 600px; */
+    text-align: center;
     margin-top: 0;
-    box-shadow: 0 0 2rem var(--orange);
+    /* box-shadow: 0 0 2rem var(--orange); */
     border-radius: 50px;
 }
 
@@ -99,7 +104,7 @@ body {
 
 #foottext {
     color: var(--darkgreen);
-    font-size: 13px;
+    font-size: 12px;
 }
 
 footer {
@@ -120,4 +125,45 @@ footer {
 
 #mailcolor:hover {
     color: var(--green);
+}
+
+/* contact------------------------ */
+
+.contact-box {
+    position: relative;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+    color: var(--green);
+
+}
+
+.contact-box .contact-text i {
+    font-size: 50px;
+}
+
+.contact-box .contact-text a {
+    color: var(--green);
+}
+
+.contact-text {
+    font-size: 30px;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+.contact-box .contact-text p {
+    margin-top: 2%;
+}
+
+.contact-map iframe {
+    margin-left: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 1rem var(--orange)
+}
+
+.contact-box a :hover {
+    color: var(--orange);
+    box-shadow: 0 0 1rem var(--orange);
+    border-radius: 4px;
 }
