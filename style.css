@@ -70,7 +70,7 @@ header h2 {
 
 @media (max-width: 700px) {
     .navbar {
-        margin-left: 0;
+        margin-left: 15px;
     }
     .navbar a{
         margin-left: 10px;
@@ -189,6 +189,12 @@ footer hr{
     margin-top: 50px;
     color: var(--green);
     text-align: center;
+}
+
+@media (max-width: 600px) {
+    .project-box img {
+        max-height: 300px;
+    }
 }
 
 /* CONTACT---------------------------------------- */
