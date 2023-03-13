@@ -39,11 +39,11 @@ header {
     background-color: var(--midgreen);
     position: fixed;
     top: 0;
-    left: 0;
     box-shadow: 0 0 0.5rem var(--orange);
     display: flex;
     align-items: center;
     z-index: 1;
+    flex-wrap: wrap;
 }
 
 header h2 {
@@ -60,18 +60,21 @@ header h2 {
     flex-wrap: wrap;
 }
 
-@media (max-width: 700px) {
-    .navbar {
-        margin-left: 0;
-    }
-}
-
 .navbar a {
     font-family: 'Mochiy Pop One', sans-serif;
     color: var(--orange);
     font-size: 20px;
     margin-left: 20px;
     text-decoration: none;
+}
+
+@media (max-width: 700px) {
+    .navbar {
+        margin-left: 0;
+    }
+    .navbar a{
+        margin-left: 10px;
+    }
 }
 
 .navbar :hover {
@@ -81,7 +84,6 @@ header h2 {
 .navbar .active {
     color: var(--green);
     text-shadow: 0px 0px 10px var(--orange), 0px 0px 15px var(--orange), 0px 0px 15px var(--orange);
-
     border-radius: 10px;
 }
 
@@ -92,9 +94,8 @@ footer {
     font-family: 'Mochiy Pop One', sans-serif;
     background-color: var(--midgreen);
     bottom: 0%;
-    left: 0%;
     position: fixed;
-    padding-left: 2%;
+    padding-left: 20px;
     box-shadow: 0 0 0.5rem var(--orange);
 }
 
@@ -229,4 +230,11 @@ footer hr{
     border-radius: 10px;
     box-shadow: 0 0 1rem var(--orange);
     opacity: 70%;
+}
+
+@media (max-width: 600px) {
+    iframe {
+        width: auto;
+        height: 300px;
+    }
 }
