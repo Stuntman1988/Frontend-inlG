@@ -174,7 +174,7 @@ footer hr{
 
 .project-box img {
 
-    max-height: 400px;
+    max-height: 350px;
     border-radius: 15px;
     box-shadow: 0 0 1rem var(--orange);
 }
