@@ -111,6 +111,9 @@ footer .mailcolor {
 footer .mailcolor:hover {
     color: var(--green);
 }
+footer hr{
+    border: transparent;
+}
 
 /* INDEX---------------------------------------- */
 
